@@ -76,12 +76,12 @@ async function sendDailySchedule(ctx) {
         let todaySchedule = schedule[currentWeekday];
 
         await ctx.reply(
-            `📅 **Day:** ${todaySchedule.day}\n` +
-            `📆 **Week Type:** ${weekType.toUpperCase()}\n` +
-            `📚 **Lessons:**\n` +
-            `   1️⃣ ${todaySchedule.lessons.first}\n` +
-            `   2️⃣ ${todaySchedule.lessons.second}\n` +
-            `   3️⃣ ${todaySchedule.lessons.third}`
+            ` **Day:** ${todaySchedule.day}\n` +
+            ` **Week Type:** ${weekType.toUpperCase()}\n` +
+            ` **Lessons:**\n` +
+            `   1️ ${todaySchedule.lessons.first}\n` +
+            `   2️ ${todaySchedule.lessons.second}\n` +
+            `   3️ ${todaySchedule.lessons.third}`
         );
     }
 
